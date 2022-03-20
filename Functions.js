@@ -49,5 +49,19 @@ console.log(totalCost)
 const plantNeedsWater = function plantNeedsWater(day) {
   if (day === 'Wednesday') {
     return true
+  } else {
+    return false
   }
 }
+
+console.log(plantNeedsWater('Tuesday'));
+
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
