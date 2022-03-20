@@ -32,3 +32,16 @@ lostDollar --;
 let favoriteAnimal = 'slow loris'
 
  console.log('My favorite animal: ' + favoriteAnimal)
+
+ const myName = 'SuSu'
+let myCity = 'Philly'
+
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`)
+
+let newVariable = 'Playing around with typeof.';
+
+console.log(typeof newVariable)
+
+newVariable = 1
+
+console.log(typeof newVariable)
