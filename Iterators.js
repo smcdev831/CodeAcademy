@@ -65,3 +65,24 @@ const longFavoriteWords = favoriteWords.filter(words => {
         return true
     }
 })
+
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(animal => {
+    return animal === 'elephant';
+}
+)
+
+const startsWithS = animals.findIndex(animal => {
+    return animal.charAt(0) === 's'
+})
+
+const newNumbers = [1, 3, 5, 7];
+
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+    console.log('The value of accumulator: ', accumulator);
+    console.log('The value of currentValue: ', currentValue);
+    return accumulator + currentValue
+  }, 10)
+  
+  console.log(newSum);
