@@ -35,3 +35,33 @@ fruits.forEach(element => {
     console.log(`I want to eat a ${element}`);
 });
 
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+const secretMessage = animals.map(word => {
+    return word[0]
+});
+
+console.log(secretMessage.join(''));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+const smallNumbers = bigNumbers.map(numbers => {
+    return numbers / 100
+});
+
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+const smallNumbers = randomNumbers.filter(numbers => {
+    if (numbers < 250) {
+        return true
+    }
+});
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+const longFavoriteWords = favoriteWords.filter(words => {
+    if (words.length > 7) {
+        return true
+    }
+})
