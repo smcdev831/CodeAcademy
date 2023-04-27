@@ -1,3 +1,7 @@
+* {
+  border: 1px solid red;
+}
+
 p {
   color: green;
 }
@@ -6,14 +10,26 @@ h1 {
   color: maroon;
 }
 
-* {
-  border: 1px solid red;
-}
-
 .title {
   color: teal;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+#article-title {
+  font-family: cursive;
+}
+
+a[href*="florence"] {
+  color: lightgreen;
+}
+
+a[href*="beijing"] {
+  color: lightblue;
+}
+
+a[href*="seoul"] {
+  color: lightpink;
 }
