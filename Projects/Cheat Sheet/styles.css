@@ -1,0 +1,16 @@
+* {
+  border: 1px solid black;
+  background-color: dimgray;
+}
+
+h1,
+h2,
+thead {
+  text-align: center;
+  font-weight: bold;
+}
+
+.tag {
+  background-color: gray;
+  font-family: monospace;
+}
