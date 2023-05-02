@@ -3,6 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
 .navigation {
   box-sizing: border-box;
   background-color: #ffffff;
@@ -16,10 +17,12 @@ body {
   width: 100%;
   z-index: 999;
 }
+
 ul {
   margin: 0px;
   padding: 0px;
 }
+
 .navigation a {
   color: #736b92;
   display: inline-block;
@@ -30,6 +33,7 @@ ul {
   padding: 10px 40px;
   text-transform: uppercase;
 }
+
 a.logo {
   color: #2176ff;
   font-family: "Amatic SC", sans-serif;
@@ -38,6 +42,7 @@ a.logo {
   text-align: center;
   text-transform: uppercase;
 }
+
 .banner {
   background-image: url("https://images.unsplash.com/photo-1418290232843-5d7a0bd93f7d?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb");
   background-position: center top;
@@ -49,10 +54,12 @@ a.logo {
   top: 100px;
   width: 100%;
 }
+
 .banner-text {
   position: relative;
   top: 200px;
 }
+
 h1 {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
@@ -63,6 +70,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
 }
+
 h2 {
   color: #2176ff;
   font-family: "Amatic SC", sans-serif;
@@ -71,10 +79,12 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 }
+
 .banner h2 {
   font-size: 120px;
   margin: -40px 0px 80px 0px;
 }
+
 .content {
   background-image: url("https://content.codecademy.com/courses/learn-links-and-buttons/project/mountain1.jpg");
   background-position: center top;
@@ -86,6 +96,7 @@ h2 {
   position: relative;
   text-align: center;
 }
+
 p {
   color: #000000;
   font-family: "Raleway", sans-serif;
@@ -93,10 +104,12 @@ p {
   line-height: 42px;
   text-align: left;
 }
+
 .description {
   display: inline-block;
   width: 70%;
 }
+
 .activities-panel {
   margin-bottom: 40px;
   padding: 80px 0px;
@@ -106,9 +119,11 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .activities-panel h2 {
   width: 100%;
 }
+
 .activity {
   background-color: #2176ff;
   box-sizing: border-box;
@@ -124,11 +139,13 @@ p {
   text-transform: uppercase;
   margin: 5px;
 }
+
 .footer {
   background-color: #2176ff;
   padding: 30px;
   text-align: center;
 }
+
 .footer h2 {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
@@ -140,4 +157,26 @@ p {
 a {
   cursor: default;
   text-decoration-line: none;
+}
+
+a:hover,
+.nav-link:hover,
+.btn:hover,
+.activity:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.btn {
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: white;
+  background-color: dimgray;
+  opacity: 0.6;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.btn:active {
+  transition: font-size 0.1s ease-in-out;
 }
