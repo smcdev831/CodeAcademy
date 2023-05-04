@@ -1,3 +1,7 @@
+* {
+  font-family: Jost, sans-serif;
+}
+
 .first-color {
   background: #36d1c4;
 }
@@ -14,7 +18,8 @@
   background: #f6318c;
 }
 
-.color-block {
+.color-block,
+.font-block {
   display: inline-block;
   height: 250px;
   width: 500px;
@@ -23,7 +28,34 @@
   margin-right: 5px;
 }
 
-.colors {
+.colors,
+.fonts,
+.typography {
   border: 1px solid dimgray;
   padding: 10px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.first-font {
+  font-family: "Crimson Text", serif;
+}
+
+.second-font {
+  font-family: "Work Sans", sans-serif;
+}
+
+.third-font {
+  font-family: Jost, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Crimson Text", serif;
 }
