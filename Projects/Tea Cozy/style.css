@@ -36,3 +36,14 @@ li {
   height: 200px;
   width: 300px;
 }
+
+.locations {
+  background-image: url(img-locations-background.jpg);
+}
+
+.downtown,
+.bayside,
+.oakdale {
+  opacity: 1;
+  width: 300px;
+}
