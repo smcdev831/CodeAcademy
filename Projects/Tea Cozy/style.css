@@ -1,3 +1,37 @@
+* {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.heading {
+  height: 69px;
+  border: 1px solid seashell;
+  width: 100%;
+}
+
+li {
+  display: inline;
+  float: right;
+}
+
+.logo {
+  height: 50px;
+  padding: 10px;
+}
+
+.mission {
+  background-image: url(img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+}
+
+.monthly {
+  width: 1000px;
+}
+
 .teas img {
   height: 200px;
   width: 300px;
