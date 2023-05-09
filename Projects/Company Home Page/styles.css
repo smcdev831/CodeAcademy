@@ -1,4 +1,19 @@
+html {
+  font-size: 12px;
+}
+
+* {
+  background: black;
+  opacity: 0.9;
+  color: dimgray;
+}
+
 .products img {
   height: 200px;
   width: 200px;
+}
+
+.team img {
+  height: 300px;
+  width: 300px;
 }
