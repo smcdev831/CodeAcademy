@@ -4,7 +4,7 @@ userName
   ? console.log(`Well hello there ${userName}`)
   : console.log("Hello mysterious stranger");
 
-let userQuestion = "Does John love me?";
+let userQuestion = "Is 7 the best number?";
 console.log(`You asked ${userQuestion}`);
 
 let randomNumber = Math.floor(Math.random() * 8);
