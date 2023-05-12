@@ -166,3 +166,22 @@ function sillySentence(adjective, verb, noun) {
 console.log(sillySentence("excited", "love", "functions"));
 
 // We encourage you to add more function calls of your own to test your code!
+
+// Write your function here:
+
+function howOld(age, year) {
+  birthYear = 2023 - age;
+  if (year > 2023) {
+    return `You will be ${year - birthYear} in the year ${year}.`;
+  } else if (year <= birthYear) {
+    return `The year ${year} was ${
+      birthYear - year
+    } years before you were born`;
+  } else {
+    return `You were ${year - birthYear} in the year ${year}`;
+  }
+}
+
+console.log(howOld(42, 1999));
+
+// Once your function is written, write function calls to test your code!
