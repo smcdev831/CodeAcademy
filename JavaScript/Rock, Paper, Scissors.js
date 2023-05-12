@@ -50,7 +50,10 @@ function determineWinner(userChoice, computerChoice) {
 function playGame() {
   let userChoice = getUserChoice((userInput = "bomb"));
   let computerChoice = getComputerChoice();
-  console.log(userChoice, computerChoice);
+  console.log(
+    "You threw " + userChoice + "!",
+    "The computer threw " + computerChoice + "!"
+  );
   console.log(determineWinner(userChoice, computerChoice));
 }
 
