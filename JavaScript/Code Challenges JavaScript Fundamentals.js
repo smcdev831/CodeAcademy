@@ -137,3 +137,13 @@ const calculateWeight = (earthWeight, planet) => {
 console.log(calculateWeight(100, "Jupiter")); // Should print 236
 
 // We encourage you to add more function calls of your own to test your code!
+
+// Write your function here:
+
+function truthyOrFalsy(value) {
+  return value ? true : false;
+}
+
+console.log(truthyOrFalsy(0)); // Should print false
+
+// We encourage you to add more function calls of your own to test your code!
