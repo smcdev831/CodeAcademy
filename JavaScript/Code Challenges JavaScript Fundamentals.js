@@ -209,3 +209,32 @@ console.log(whatRelation(34));
 
 console.log(whatRelation(3));
 // Should print 'You are likely 2nd cousins.'
+
+// Write your function here:
+function tipCalculator(quality, total) {
+  switch (quality) {
+    case "bad":
+      return total * 0.05;
+      break;
+
+    case "ok":
+      return total * 0.15;
+      break;
+
+    case "good":
+      return total * 0.2;
+      break;
+
+    case "excellent":
+      return total * 0.3;
+      break;
+
+    default:
+      return total * 0.18;
+      break;
+  }
+}
+
+console.log(tipCalculator("good", 100)); //should return 20
+
+// We encourage you to add more function calls of your own to test your code!
