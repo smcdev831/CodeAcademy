@@ -101,3 +101,39 @@ const rollTheDice = () => {
   let die2 = Math.floor(Math.random() * 6 + 1);
   return die1 + die2;
 };
+
+// Write your function here:
+const calculateWeight = (earthWeight, planet) => {
+  if (
+    planet !== "Mercury" &&
+    planet !== "Venus" &&
+    planet !== "Mars" &&
+    planet !== "Jupiter" &&
+    planet !== "Saturn"
+  ) {
+    return "Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.";
+  }
+
+  switch (planet) {
+    case "Mercury":
+      weight = earthWeight * 0.378;
+      break;
+    case "Venus":
+      weight = earthWeight * 0.907;
+      break;
+    case "Mars":
+      weight = earthWeight * 0.377;
+      break;
+    case "Jupiter":
+      weight = earthWeight * 2.36;
+      break;
+    case "Saturn":
+      weight = earthWeight * 0.916;
+      break;
+  }
+  return weight;
+};
+
+console.log(calculateWeight(100, "Jupiter")); // Should print 236
+
+// We encourage you to add more function calls of your own to test your code!
