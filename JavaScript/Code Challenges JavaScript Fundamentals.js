@@ -238,3 +238,37 @@ function tipCalculator(quality, total) {
 console.log(tipCalculator("good", 100)); //should return 20
 
 // We encourage you to add more function calls of your own to test your code!
+
+// Write your function here:
+function toEmoticon(emotion) {
+  switch (emotion) {
+    case "shrug":
+      return '|_{"}_|';
+      break;
+
+    case "smiley face":
+      return ":)";
+      break;
+
+    case "frowny face":
+      return ":(";
+      break;
+
+    case "winky face":
+      return ";)";
+      break;
+
+    case "heart":
+      return "<3";
+      break;
+
+    default:
+      return "|_(* ~ *)_|";
+      break;
+  }
+}
+
+console.log(toEmoticon("whatever"));
+// Should print  '|_(* ~ *)_|'
+
+// We encourage you to add more function calls of your own to test your code!
