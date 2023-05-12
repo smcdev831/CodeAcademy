@@ -147,3 +147,22 @@ function truthyOrFalsy(value) {
 console.log(truthyOrFalsy(0)); // Should print false
 
 // We encourage you to add more function calls of your own to test your code!
+
+// Write your function here:
+const numImaginaryFriends = (friends) => {
+  return Math.ceil(friends * 0.25);
+};
+
+console.log(numImaginaryFriends(20)); // Should print 5
+console.log(numImaginaryFriends(10)); // Should print 3 (2.5 rounded up!)
+
+// We encourage you to add more function calls of your own to test your code!
+
+// Write your function here:
+function sillySentence(adjective, verb, noun) {
+  return `I am so ${adjective} because I ${verb} coding! Time to write some more awesome ${noun}!`;
+}
+
+console.log(sillySentence("excited", "love", "functions"));
+
+// We encourage you to add more function calls of your own to test your code!
