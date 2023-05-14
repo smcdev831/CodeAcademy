@@ -32,3 +32,29 @@ for (let i = 0; i < bobsFollowers.length; i++) {
   }
 }
 console.log(mutualFollowers);
+
+const cards = ["diamond", "spade", "heart", "club"];
+// Write your code below
+let currentCard;
+while (currentCard !== "spade") {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+}
+
+// Write your code below
+let cupsOfSugarNeeded = 2;
+let cupsAdded = 0;
+do {
+  cupsAdded += 1;
+  console.log(` ${cupsAdded} cups of sugar added`);
+} while (cupsAdded < cupsOfSugarNeeded);
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+// Write your code below
+for (let i = 0; i < rapperArray.length; i++) {
+  if (rapperArray[i] === "Tupac") break;
+  console.log(rapperArray[i]);
+}
+console.log("And if you don't know, now you know.");
+
+Quiz: 100%
