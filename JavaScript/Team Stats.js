@@ -9,4 +9,12 @@ const team = {
     { opponent: "Ayr", teamPoints: 7, opponentPoints: 0 },
     { opponent: "Anchorage", teamPoints: 12, opponentPoints: 5 },
   ],
+
+  get players() {
+    return this._players;
+  },
+
+  get games() {
+    return this._games;
+  },
 };
