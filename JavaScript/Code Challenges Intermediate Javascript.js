@@ -77,9 +77,15 @@ function squareNums(numbers) {
 }
 console.log(squareNums(numbers));
 
+// Write your code here:
 function shoutGreetings(greetings) {
   let loudGreetings = [];
   for (let i = 0; i < greetings.length; i++) {
-    loudGreetings.push(greetings[i].toUppercase + "!");
+    loudGreetings.push(greetings[i].toUpperCase() + "!");
   }
+  return loudGreetings;
 }
+// Feel free to uncomment out the code below to test your function!
+const greetings = ["hello", "hi", "heya", "oi", "hey", "yo"];
+console.log(shoutGreetings(greetings));
+// Should print [ 'HELLO!', 'HI!', 'HEYA!', 'OI!', 'HEY!', 'YO!' ]
