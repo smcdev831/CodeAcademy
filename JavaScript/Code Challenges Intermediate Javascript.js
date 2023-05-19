@@ -126,3 +126,54 @@ const myStuff = [
 ];
 console.log(justCoolStuff(myStuff, coolStuff));
 // Should print [ 'fruit-by-the-foot', 'skateboards', 'my room' ]
+
+// Write your code here:
+const isTheDinnerVegan = (dinner) =>
+  dinner.every((food) => food.source === "plant");
+// Feel free to comment out the code below to test your function
+const dinner = [
+  { name: "hamburger", source: "meat" },
+  { name: "cheese", source: "dairy" },
+  { name: "ketchup", source: "plant" },
+  { name: "bun", source: "plant" },
+  { name: "dessert twinkies", source: "unknown" },
+];
+console.log(isTheDinnerVegan(dinner));
+// Should print false
+
+const speciesArray = [
+  { speciesName: "shark", numTeeth: 50 },
+  { speciesName: "dog", numTeeth: 42 },
+  { speciesName: "alligator", numTeeth: 80 },
+  { speciesName: "human", numTeeth: 32 },
+];
+// Write your code here:
+function sortSpeciesByTeeth(arr) {
+  arr.sort((a, b) => a.numTeeth - b.numTeeth);
+  return arr;
+}
+// Feel free to comment out the code below when you're ready to test your function!
+console.log(sortSpeciesByTeeth(speciesArray));
+// Should print:
+// [ { speciesName: 'human', numTeeth: 32 },
+//   { speciesName: 'dog', numTeeth: 42 },
+//   { speciesName: 'shark', numTeeth: 50 },
+//   { speciesName: 'alligator', numTeeth: 80 } ]
+
+// Write your code here:
+const findMyKeys = (arr) =>
+  arr.findIndex((item) => {
+    return item === "keys";
+  });
+// Feel free to comment out the code below to test your function
+const randomStuff = [
+  "credit card",
+  "screwdriver",
+  "receipt",
+  "gum",
+  "keys",
+  "used gum",
+  "plastic spoon",
+];
+console.log(findMyKeys(randomStuff));
+// Should print 4
