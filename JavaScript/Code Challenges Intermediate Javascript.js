@@ -177,3 +177,36 @@ const randomStuff = [
 ];
 console.log(findMyKeys(randomStuff));
 // Should print 4
+
+// Write your code here:
+const dogFactory = (name, breed, weight) => {
+  return {
+    _name: name,
+    _breed: breed,
+    _weight: weight,
+    get name() {
+      return this._name;
+    },
+    get breed() {
+      return this._breed;
+    },
+    get weight() {
+      return this._weight;
+    },
+    set name(names) {
+      this._name = names;
+    },
+    set breed(breeds) {
+      this._breed = breeds;
+    },
+    set weight(weights) {
+      this._weight = weights;
+    },
+    bark() {
+      return "ruff! ruff!";
+    },
+    eatTooManyTreats() {
+      this._weight += 1;
+    },
+  };
+};
