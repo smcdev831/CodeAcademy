@@ -1,0 +1,1 @@
+function validateCred(arr) {}
