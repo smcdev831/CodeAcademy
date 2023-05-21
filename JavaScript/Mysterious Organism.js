@@ -17,5 +17,8 @@ const pAequorFactory = (specieNum, dna) => {
   return {
     specieNum: specieNum,
     dna: dna,
+    mutate() {
+      returnRandBase();
+    },
   };
 };
