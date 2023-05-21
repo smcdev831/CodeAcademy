@@ -1,3 +1,4 @@
+invalidCards = [];
 function validateCred(arr) {
   newArr = arr.slice(0, -1).reverse();
   total = 0;
@@ -16,6 +17,7 @@ function validateCred(arr) {
     console.log("Valid");
   } else {
     console.log("Invalid");
+    invalidCards.push(arr);
   }
 }
 
@@ -24,3 +26,6 @@ function findInvalidCards(batch) {
     validateCred(batch[i]);
   }
 }
+
+findInvalidCards(batch);
+console.log(invalidCards);
