@@ -18,3 +18,9 @@ function validateCred(arr) {
     console.log("Invalid");
   }
 }
+
+function findInvalidCards(batch) {
+  for (let i = 0; i < batch.length; i++) {
+    validateCred(batch[i]);
+  }
+}
