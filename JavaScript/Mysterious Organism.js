@@ -26,5 +26,6 @@ const pAequorFactory = (num, arr) => {
       this.dna[randIndex] = newBase;
       return this.dna;
     },
+    compareDNA() {},
   };
 };
