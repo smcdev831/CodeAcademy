@@ -13,10 +13,10 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
-const pAequorFactory = (num, arr) => {
+const pAequorFactory = (specieNum, dna) => {
   return {
-    specieNum: num,
-    dna: arr,
+    specieNum: specieNum,
+    dna: dna,
     mutate() {
       let randIndex = Math.floor(Math.random() * this.dna.length);
       let newBase = returnRandBase();
