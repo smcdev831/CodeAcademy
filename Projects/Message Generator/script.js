@@ -24,3 +24,5 @@ let status = [
   "Do some volunteer work",
   "Try a new form of exercise",
 ];
+
+for (let i = 0; i < arr.length; i++) {}
