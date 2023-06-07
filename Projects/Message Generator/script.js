@@ -9,22 +9,49 @@ const wisdom = {
     "terrible luck",
     "incredible luck",
     "bad luck",
-    "neutral",
+    "neutral luck",
   ],
   status: [
-    "Go for a walk",
-    "Learn a new language",
-    "Try a new food",
-    "Listen to music",
-    "Start a journal",
-    "Visit a museum",
-    "Learn a new skill",
-    "Read a book",
-    "Watch a movie",
-    "Call a friend",
-    "Do some volunteer work",
-    "Try a new form of exercise",
+    "go for a walk",
+    "learn a new language",
+    "try a new food",
+    "listen to music",
+    "start a journal",
+    "visit a museum",
+    "learn a new skill",
+    "read a book",
+    "watch a movie",
+    "call a friend",
+    "do some volunteer work",
+    "try a new form of exercise",
   ],
 };
 
-for (let i = 0; i < arr.length; i++) {}
+let completeWisdom = [];
+
+for (let prop in wisdom) {
+  let optionIdx = generateRandomNumber(wisdom[prop].length);
+
+  switch (prop) {
+    case "signs":
+      completeWisdom.push(
+        `Your sign right now is a ${wisdom[prop][optionIdx]}.`
+      );
+      break;
+    case "luck":
+      completeWisdom.push(`You are having ${wisdom[prop][optionIdx]}.`);
+      break;
+    case "status":
+      completeWisdom.push(`You should ${wisdom[prop][optionIdx]}.`);
+      break;
+    default:
+      completeWisdom.push("There is not enough info.");
+  }
+}
+
+function formatWisdom(wisdoms) {
+  const formatted = completeWisdom.join("\n");
+  console.log(formatted);
+}
+
+formatWisdom(completeWisdom);
