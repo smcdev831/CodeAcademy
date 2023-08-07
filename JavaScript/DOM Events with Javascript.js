@@ -7,3 +7,7 @@ function showInfo() {
 }
 
 readMore.addEventListener("click", showInfo);
+
+function textChange() {
+  view.innerHTML = "Hello World!";
+}
